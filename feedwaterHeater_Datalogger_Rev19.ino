@@ -1,9 +1,3 @@
-// Example Arduino/ESP8266 code to upload data to Google Sheets
-// Follow setup instructions found here:
-// https://github.com/StorageB/Google-Sheets-Logging
-// reddit: u/StorageB107
-// email: StorageUnitB@gmail.com
-//Bulan Oktober 2023
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include <Wire.h>
@@ -18,31 +12,30 @@
 AsyncWebServer server(80);
 
 
-#define ONE_WIRE_BUS D6
+#define ONE_WIRE_BUS D3
 #include "addons/TokenHelper.h"
 //Provide the RTDB payload printing info and other helper functions.
 #include "addons/RTDBHelper.h"
 OneWire oneWire(ONE_WIRE_BUS);
-int relay = D3;
-int led = D4;
+int relay = D4;
 DallasTemperature sensors(&oneWire);
 float suhu = 0.0;
 float last_state = 0.0;
 
-#define WIFI_SSID "Boiler"
-#define WIFI_PASSWORD "BatuBara123."
+#define WIFI_SSID "xxx"      //di isi SSID Wifi
+#define WIFI_PASSWORD "xxx"  //di isi password wifi
 // Enter network credentials:
-const char* ssid = "Boiler";
-const char* password = "BatuBara123.";
+const char* ssid = "xxx";
+const char* password = "xxx";
 
-const char* _SSID = "Boiler";
-const char* _PASS = "BatuBara123.";
+const char* _SSID = "xxx";
+const char* _PASS = "xxx.";
 
-#define API_KEY "AIzaSyAr9eZUGfO4_v0HUnp9QgaYha3QgQOHoMQ"
+#define API_KEY "xxx-xxx-xxx-xxx" //diisi web api key firebase
 // Enter Google Script Deployment ID:
-const char* GScriptId = "AKfycbzegcUhzJyoqeQwiJTkYRjBIpHS2A68K4N6SHskcPe_c1gky0Qj5KbZgoNhYz7kMftn";
+const char* GScriptId = "xxx-xxx-xxx-xxx";
 // Insert RTDB URLefine the RTDB URL */
-#define DATABASE_URL "https://wemosmini-12b9c-default-rtdb.asia-southeast1.firebasedatabase.app/"
+#define DATABASE_URL "xxx-xxx"
 // Enter command (insert_row or append_row) and your Google Sheets sheet name (default is Sheet1):
 String payload_base = "{\"command\": \"insert_row\", \"sheet_name\": \"Sheet1\", \"values\": ";
 String payload = "";
