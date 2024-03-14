@@ -20,11 +20,11 @@ const char* password = "xxxx";
 #define API_KEY "xxxx-xxxx-xxxx-xxxx"
 
 // Insert Authorized Email and Corresponding Password
-#define USER_EMAIL "ardianwahyu.p22@gmail.com"
-#define USER_PASSWORD "saskianeda123."
+#define USER_EMAIL "xxxxx@xxx"
+#define USER_PASSWORD "xxxxx"
 
 // Insert Firebase storage bucket ID e.g bucket-name.appspot.com
-#define STORAGE_BUCKET_ID "esp32cam-steam.appspot.com"
+#define STORAGE_BUCKET_ID "xxx.appspot.com"
 // For example:
 //#define STORAGE_BUCKET_ID "esp-iot-app.appspot.com"
 
