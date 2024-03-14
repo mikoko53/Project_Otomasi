@@ -13,11 +13,11 @@
 #include <WiFiUdp.h>
 
 //Replace with your network credentials
-const char* ssid = "Staff";
-const char* password = "DL-Staff123.";
+const char* ssid = "xxx";
+const char* password = "xxxx";
 
 // Insert Firebase project API Key
-#define API_KEY "AIzaSyAEhnJ3kC-Grr5ghyTILQneXMCk6LBesv0"
+#define API_KEY "xxxx-xxxx-xxxx-xxxx"
 
 // Insert Authorized Email and Corresponding Password
 #define USER_EMAIL "ardianwahyu.p22@gmail.com"
